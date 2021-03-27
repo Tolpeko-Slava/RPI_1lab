@@ -1,0 +1,611 @@
+@font-face {
+    font-family: Gotham-Bold;
+    src: url(../Shrit/GothamRoubded/GothamRoundedBold_21016.ttf);
+}
+
+@font-face {
+    font-family: Gotham-Book;
+    src: url(../Shrit/GothamRoubded/GothamRoundedBook_21018.ttf);
+}
+
+@font-face {
+    font-family: Gotham-Medium;
+    src: url(../Shrit/GothamRoubded/GothamRoundedMedium_21022.ttf);
+}
+
+body{
+    margin: auto 200px;
+    font-family: 'Gotham-Bold',sans-serif;
+    font-size:15px;
+    max-width: 1280px;
+    background: white;
+}
+
+/*Intro*/
+.intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 1280px;
+    height: 745px;
+    background: url("../Images/hera.png") no-repeat;
+}
+
+.intro_iner{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center; 
+    margin-top: 318px;
+    line-height: 0.1;
+}
+
+.intro_title{
+    font-size: 38px;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 4.5px;
+    text-align: center;
+}
+
+.intro_subtitle{
+    font-size: 15px;
+    color: white;
+    font-weight: 100;
+    font-family: 'Gotham-Medium',sans-serif;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+.downIntro{
+    letter-spacing: 9px;
+    text-align: center;
+    margin-bottom: 22px;
+    margin-top: auto;
+    
+}
+
+.Intro_Styl{
+    line-height: 0.6;
+}
+
+@keyframes downIntr {
+	0%, 40% 100% {
+		transform: translateX(0);
+		transform: translateX(0);
+	}
+
+	80% {
+		transform: translateX(5px);
+		transform: translateX(5px);
+	}
+
+	20% {
+		transform: translateX(-5px);
+		transform: translateX(-5px);
+	}
+}
+
+.downIntro_iner:hover{
+    animation: downIntr 0.5s;
+}
+
+
+/*Button*/
+.Button{
+    text-transform: uppercase;
+    color: white;
+    margin-top: 25px;
+    font-size: 12px;
+    background: Rgb(22,160,133);
+    padding: 15px 35px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+
+.Button:hover{
+    background: radial-gradient(navy, transparent);
+    color: tomato;
+}
+
+
+/*Head*/
+.herd{
+    position: absolute;
+}
+
+.herd_iner{
+    display: flex;
+    align-items: center;
+    max-width: 800px;
+    margin: 0px auto;
+    margin-left: 253px;
+}
+
+
+.herd_logo{
+    font-weight: 700;
+}
+
+/*Nav*/
+.nav{
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-top: 65px;
+    letter-spacing: 5px;
+}
+
+.nav_logo{
+    margin-left: 75px;
+    margin-right: 70px;
+    margin-top: 40px;
+}
+
+.nav_link{
+    margin: auto 26px;
+    color: white;
+    text-decoration: none;
+    transition: color .2s linear;
+}
+
+.nav_link:hover{
+    color:#CC0000;
+}
+
+/*Sector_Frirst*/
+.One_Sector_Backgrout{
+    height: 492px;
+    width: 1280px;
+    background: url("../Images/1sector.png") top no-repeat;
+}
+
+.One_Sector {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 448px;
+    margin-left: 128px;
+}
+
+.One_Sector_hear{
+    color: green;
+    font-size: 19px;
+    margin-top: 114px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.One_Sector_text{
+    margin-top: 20px;
+    font-size: 12px;
+    line-height: 1.9;
+    letter-spacing: 1.5px;
+    max-width: 425px;
+    font-family: 'Gotham-Book',sans-serif;
+    
+}
+
+.One_Button{
+    text-transform: uppercase;
+    color: white;
+    max-width: 179px;
+    margin-top: 25px;
+    font-size: 12px;
+    background: Rgb(22,160,133);
+    padding: 20px 35px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+   letter-spacing: 1px;
+}
+
+.One_Button:hover{
+    background: black;
+}
+
+/*Text_Write*/
+.Text_bold{
+    font-size: 13px;
+    font-weight: bolder;
+}
+
+/*Sector_Two*/
+
+.Two_Sector_backgrount{
+    height: 410px;
+    background: url("../Images/2Sector.png")no-repeat;
+    background-position: left top;
+    margin-top: 148px;
+    margin-left: 40px;
+    width: 1280px;
+}
+
+.Two_Sector{
+    margin-left: 728px;
+    max-width: 448px;
+}
+
+.Two_Sector * {
+    max-width: 75%;
+}
+
+.Two_Sector_hear{
+    color: green;
+    font-size: 19px;
+    text-transform: uppercase;
+}
+
+.Two_Sector_tetx{    
+    margin-top: 45px;
+    font-size: 12px;
+    line-height: 1.9;
+    letter-spacing: 1.5px;
+    max-width: 425px;
+    font-family: 'Gotham-Book',sans-serif;
+}
+
+.Two_Button{
+    text-transform: uppercase;
+    color: white;
+    max-width: 192px;
+    margin-top: 25px;
+    font-size: 12px;
+    background: Rgb(22,160,133);
+    padding: 20px 45px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+   letter-spacing: 1px;
+}
+
+.Two_Button:hover{
+    color: rgb(22,160,133);
+    background: gainsboro;
+    font-weight: 700;
+}
+
+.Slaeder_text{
+    margin-top: 35px;
+}
+
+.Butt_sleder{
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+    background: none;
+}
+
+.Sleders_Number{
+    margin: 0 0;
+}
+
+@keyframes Two_sleder {
+	0%, 20%, 60%, 100% {
+		transform: translateY(0);
+		transform: translateY(0);
+	}
+
+	40% {
+		transform: translateY(10px);
+		transform: translateY(10px);
+	}
+
+	80% {
+		transform: translateY(5px);
+		transform: translateY(5px);
+	}
+}
+
+.Butt_sleder:hover{
+    animation: Two_sleder 1s;
+}
+
+/*Tree_Sector*/
+
+.Tree_Sector_backgrount{
+    height: 484px;
+    width: 1280px;
+    background: url("../Images/3Sector.png")no-repeat;
+    
+}
+
+.Tree_Sector_Text{
+    max-height: 95px;
+    max-width: 192px;
+    text-align: center;
+    margin-left: 128px;
+}
+
+.Tree_Sector_img{
+    margin-top: 166px;
+    margin-bottom: 26px;
+}
+
+.Tree_Sector_hear{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 17px;
+    margin: auto;
+}
+
+.Tree_Sector_Subhear{
+    text-align: center;
+    font-family: "Gotham-Medium",sans-serif;
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+
+.Tree_Slaiders{
+    margin-left: 371px;
+    display: flex;
+}
+
+.Tree_Sector_Slaiders_Img{
+    margin: auto 13px;
+}
+
+.Buton_tree_sleder{
+    margin-left: 1105px;
+}
+
+.Tree_Butt_sleder{
+    border: none;
+    cursor: pointer;
+    background: none;
+    margin-bottom: 10px;
+}
+
+@keyframes Tree_Sleder {
+	0%, 20%, 60%, 100% {
+		transform: translateY(0);
+		transform: translateY(0);
+	}
+
+	40% {
+		transform: translateY(-10px);
+		transform: translateY(-10px);
+	}
+
+	80% {
+		transform: translateY(-5px);
+		transform: translateY(-5px);
+	}
+}
+
+.Tree_Butt_sleder:hover{
+    animation: Tree_Sleder 1s;
+}
+
+/*Fourth_Sector*/
+.Fourth_Sector_backgrount{
+    height: 789px;
+    width: 1280px;
+    background:url("../Images/4Sector.png")no-repeat;
+}
+.Fourth_Sector{
+    max-height: 140px;
+    max-width: 512px; 
+    text-align: center;
+    margin-left: 384px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.Fourth_Sector_Text{
+    color: white;
+    margin-top: 350px;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    
+}
+
+.Butt_Emal{
+    display: flex;
+    margin-left: 83px;
+}
+
+.Fourth_Emal_Button{
+    padding: 5px 22px;
+    font-family: "Gotham-Medium",sans-serif;
+    border: none;
+    font-size: 18px;
+    color: black;
+    width: 236px;
+    border-radius: 3px;
+    letter-spacing: 1px;
+}
+
+.Fourth_Button{
+    text-transform: uppercase;
+    color: white;
+    font-size: 12px;
+    background: Rgb(22,160,133);
+    padding: 20px 24px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+
+.Fourth_Button:hover{
+    background: navy;
+}
+
+/*Fifte_Sector*/
+.Fifte_Sector_Backgrout{
+    height: 395px;
+    width:  1280px;
+    background: url("../Images/5Sector.png")no-repeat;
+}
+
+.Fifte_Sector{
+   max-height: 225px;
+   max-width: 890px;
+   margin-left: 192px;
+   text-align: center;
+   display: flex;
+}
+
+.Fifte_Sector_hear{
+    margin-top: 95px;
+    font-size: 20px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.Fifte_Sector_Subhear{
+    letter-spacing: 1px;
+    line-height: 1.8;
+    text-transform: uppercase;
+    font-family: "Gotham-Medium",sans-serif;
+    font-size: 13px;
+    margin-top: -5px;
+}
+
+.Fifte_Sector_Shop{
+    display: flex;
+    margin-top: 48px;
+}
+
+.Butt_Apple{
+    display: flex;
+    margin-left: 83px;
+    margin: auto 13px;
+    margin-left: 140px;
+}
+
+.Apple_Button{
+    text-transform: uppercase;
+    color: white;
+    font-size: 12px;
+    background: Rgb(22,160,133);
+    padding: 14px 18px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+
+.Apple_text{
+    width: 235px;
+    background: rgb(26,188,156);
+    border: none;
+    color: white;
+    font-size: 19px;
+    border-radius: 3px;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+.Butt_Apple:hover{
+    direction: rtl;
+}
+
+.Butt_Apple:hover .Apple_text{
+    background: gray;
+}
+
+.Butt_Apple:hover .Apple_Button{
+    background: tomato;
+}
+
+.Butt_Android{
+    display: flex;
+    margin-left: 13px;
+}
+
+.Android_text{
+    width: 235px;
+    background: rgb(26,188,156);
+    border: none;
+    color: white;
+    font-size: 19px;
+    border-radius: 3px;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+.Android_Button{
+    text-transform: uppercase;
+    color: white;
+    font-size: 12px;
+    background: Rgb(22,160,133);
+    padding: 12px 16px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+
+.Butt_Android:hover{
+    direction: rtl;
+}
+
+.Butt_Android:hover .Android_text{
+    background: gray;
+}
+
+.Butt_Android:hover .Android_Button{
+    background: tomato;
+}
+
+/*Down*/
+
+.Down{
+    width: 1280px;
+    height: 131px;
+}
+
+.Down_nav{ 
+    text-transform: uppercase;
+    margin: 13px 0;
+}
+
+.Down_nav_incer{
+    text-decoration: none;
+    color: black;
+    letter-spacing: 1px;
+}
+
+.Down_Beetwoon{
+    color: Rgb(22,160,133);
+}
+
+.Down_Big_text{
+    max-height: 50px;
+    display: inline-block;
+    margin-top: 45px;
+    margin-left: 128px;
+}
+
+.Down_text{
+    font-size: 15px;
+    letter-spacing: 1px; 
+    margin: 13px 0;
+}
+
+.Down_img{
+    margin-left: 650px;
+}
+
+.Down_nav_incer:hover{
+    color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
